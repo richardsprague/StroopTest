@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */; };
+		FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */; };
+		FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */; };
+		FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */; };
+		FEFFA6DD24A3CB82002AF671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6DC24A3CB82002AF671 /* Assets.xcassets */; };
+		FEFFA6E024A3CB82002AF671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6DF24A3CB82002AF671 /* Preview Assets.xcassets */; };
+		FEFFA6E324A3CB82002AF671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */; };
+		FEFFA6EE24A3CB82002AF671 /* StroopHelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6ED24A3CB82002AF671 /* StroopHelloTests.swift */; };
+		FEFFA6F924A3CB82002AF671 /* StroopHelloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6F824A3CB82002AF671 /* StroopHelloUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEFFA6EA24A3CB82002AF671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEFFA6C824A3CB6B002AF671 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFFA6CF24A3CB6B002AF671;
+			remoteInfo = StroopHello;
+		};
+		FEFFA6F524A3CB82002AF671 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEFFA6C824A3CB6B002AF671 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEFFA6CF24A3CB6B002AF671;
+			remoteInfo = StroopHello;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FEFFA6D024A3CB6B002AF671 /* StroopHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroopHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FEFFA6D824A3CB6C002AF671 /* StroopHello.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StroopHello.xcdatamodel; sourceTree = "<group>"; };
+		FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FEFFA6DC24A3CB82002AF671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEFFA6DF24A3CB82002AF671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FEFFA6E224A3CB82002AF671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEFFA6E424A3CB82002AF671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEFFA6E924A3CB82002AF671 /* StroopHelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StroopHelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFFA6ED24A3CB82002AF671 /* StroopHelloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopHelloTests.swift; sourceTree = "<group>"; };
+		FEFFA6EF24A3CB82002AF671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEFFA6F424A3CB82002AF671 /* StroopHelloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StroopHelloUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFFA6F824A3CB82002AF671 /* StroopHelloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopHelloUITests.swift; sourceTree = "<group>"; };
+		FEFFA6FA24A3CB82002AF671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEFFA6CD24A3CB6B002AF671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFA6E624A3CB82002AF671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFA6F124A3CB82002AF671 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEFFA6C724A3CB6B002AF671 = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6D224A3CB6B002AF671 /* StroopHello */,
+				FEFFA6EC24A3CB82002AF671 /* StroopHelloTests */,
+				FEFFA6F724A3CB82002AF671 /* StroopHelloUITests */,
+				FEFFA6D124A3CB6B002AF671 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEFFA6D124A3CB6B002AF671 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6D024A3CB6B002AF671 /* StroopHello.app */,
+				FEFFA6E924A3CB82002AF671 /* StroopHelloTests.xctest */,
+				FEFFA6F424A3CB82002AF671 /* StroopHelloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEFFA6D224A3CB6B002AF671 /* StroopHello */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */,
+				FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */,
+				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
+				FEFFA6DC24A3CB82002AF671 /* Assets.xcassets */,
+				FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */,
+				FEFFA6E424A3CB82002AF671 /* Info.plist */,
+				FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */,
+				FEFFA6DE24A3CB82002AF671 /* Preview Content */,
+			);
+			path = StroopHello;
+			sourceTree = "<group>";
+		};
+		FEFFA6DE24A3CB82002AF671 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6DF24A3CB82002AF671 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEFFA6EC24A3CB82002AF671 /* StroopHelloTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6ED24A3CB82002AF671 /* StroopHelloTests.swift */,
+				FEFFA6EF24A3CB82002AF671 /* Info.plist */,
+			);
+			path = StroopHelloTests;
+			sourceTree = "<group>";
+		};
+		FEFFA6F724A3CB82002AF671 /* StroopHelloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6F824A3CB82002AF671 /* StroopHelloUITests.swift */,
+				FEFFA6FA24A3CB82002AF671 /* Info.plist */,
+			);
+			path = StroopHelloUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEFFA6CF24A3CB6B002AF671 /* StroopHello */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFFA6FD24A3CB83002AF671 /* Build configuration list for PBXNativeTarget "StroopHello" */;
+			buildPhases = (
+				FEFFA6CC24A3CB6B002AF671 /* Sources */,
+				FEFFA6CD24A3CB6B002AF671 /* Frameworks */,
+				FEFFA6CE24A3CB6B002AF671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StroopHello;
+			productName = StroopHello;
+			productReference = FEFFA6D024A3CB6B002AF671 /* StroopHello.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEFFA6E824A3CB82002AF671 /* StroopHelloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFFA70024A3CB83002AF671 /* Build configuration list for PBXNativeTarget "StroopHelloTests" */;
+			buildPhases = (
+				FEFFA6E524A3CB82002AF671 /* Sources */,
+				FEFFA6E624A3CB82002AF671 /* Frameworks */,
+				FEFFA6E724A3CB82002AF671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFFA6EB24A3CB82002AF671 /* PBXTargetDependency */,
+			);
+			name = StroopHelloTests;
+			productName = StroopHelloTests;
+			productReference = FEFFA6E924A3CB82002AF671 /* StroopHelloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEFFA6F324A3CB82002AF671 /* StroopHelloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFFA70324A3CB83002AF671 /* Build configuration list for PBXNativeTarget "StroopHelloUITests" */;
+			buildPhases = (
+				FEFFA6F024A3CB82002AF671 /* Sources */,
+				FEFFA6F124A3CB82002AF671 /* Frameworks */,
+				FEFFA6F224A3CB82002AF671 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEFFA6F624A3CB82002AF671 /* PBXTargetDependency */,
+			);
+			name = StroopHelloUITests;
+			productName = StroopHelloUITests;
+			productReference = FEFFA6F424A3CB82002AF671 /* StroopHelloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEFFA6C824A3CB6B002AF671 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Richard Sprague";
+				TargetAttributes = {
+					FEFFA6CF24A3CB6B002AF671 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FEFFA6E824A3CB82002AF671 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FEFFA6CF24A3CB6B002AF671;
+					};
+					FEFFA6F324A3CB82002AF671 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FEFFA6CF24A3CB6B002AF671;
+					};
+				};
+			};
+			buildConfigurationList = FEFFA6CB24A3CB6B002AF671 /* Build configuration list for PBXProject "StroopHello" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEFFA6C724A3CB6B002AF671;
+			productRefGroup = FEFFA6D124A3CB6B002AF671 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEFFA6CF24A3CB6B002AF671 /* StroopHello */,
+				FEFFA6E824A3CB82002AF671 /* StroopHelloTests */,
+				FEFFA6F324A3CB82002AF671 /* StroopHelloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEFFA6CE24A3CB6B002AF671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFFA6E324A3CB82002AF671 /* LaunchScreen.storyboard in Resources */,
+				FEFFA6E024A3CB82002AF671 /* Preview Assets.xcassets in Resources */,
+				FEFFA6DD24A3CB82002AF671 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFA6E724A3CB82002AF671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFA6F224A3CB82002AF671 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEFFA6CC24A3CB6B002AF671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */,
+				FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */,
+				FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */,
+				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFA6E524A3CB82002AF671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFFA6EE24A3CB82002AF671 /* StroopHelloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEFFA6F024A3CB82002AF671 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFFA6F924A3CB82002AF671 /* StroopHelloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEFFA6EB24A3CB82002AF671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEFFA6CF24A3CB6B002AF671 /* StroopHello */;
+			targetProxy = FEFFA6EA24A3CB82002AF671 /* PBXContainerItemProxy */;
+		};
+		FEFFA6F624A3CB82002AF671 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEFFA6CF24A3CB6B002AF671 /* StroopHello */;
+			targetProxy = FEFFA6F524A3CB82002AF671 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFFA6E224A3CB82002AF671 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEFFA6FB24A3CB82002AF671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEFFA6FC24A3CB82002AF671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEFFA6FE24A3CB83002AF671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StroopHello/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StroopHello/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEFFA6FF24A3CB83002AF671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"StroopHello/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StroopHello/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHello;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEFFA70124A3CB83002AF671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StroopHelloTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHelloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StroopHello.app/StroopHello";
+			};
+			name = Debug;
+		};
+		FEFFA70224A3CB83002AF671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StroopHelloTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHelloTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StroopHello.app/StroopHello";
+			};
+			name = Release;
+		};
+		FEFFA70424A3CB83002AF671 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StroopHelloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHelloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StroopHello;
+			};
+			name = Debug;
+		};
+		FEFFA70524A3CB83002AF671 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StroopHelloUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHelloUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StroopHello;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEFFA6CB24A3CB6B002AF671 /* Build configuration list for PBXProject "StroopHello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFFA6FB24A3CB82002AF671 /* Debug */,
+				FEFFA6FC24A3CB82002AF671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFFA6FD24A3CB83002AF671 /* Build configuration list for PBXNativeTarget "StroopHello" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFFA6FE24A3CB83002AF671 /* Debug */,
+				FEFFA6FF24A3CB83002AF671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFFA70024A3CB83002AF671 /* Build configuration list for PBXNativeTarget "StroopHelloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFFA70124A3CB83002AF671 /* Debug */,
+				FEFFA70224A3CB83002AF671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFFA70324A3CB83002AF671 /* Build configuration list for PBXNativeTarget "StroopHelloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFFA70424A3CB83002AF671 /* Debug */,
+				FEFFA70524A3CB83002AF671 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FEFFA6D824A3CB6C002AF671 /* StroopHello.xcdatamodel */,
+			);
+			currentVersion = FEFFA6D824A3CB6C002AF671 /* StroopHello.xcdatamodel */;
+			path = StroopHello.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FEFFA6C824A3CB6B002AF671 /* Project object */;
+}
