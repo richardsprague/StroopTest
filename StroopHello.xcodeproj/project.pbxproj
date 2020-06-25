@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */; };
 		FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */; };
 		FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */; };
 		FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */; };
 		FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */; };
-		FEFFA6DD24A3CB82002AF671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6DC24A3CB82002AF671 /* Assets.xcassets */; };
+		FEFFA6DD24A3CB82002AF671 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6DC24A3CB82002AF671 /* assets.xcassets */; };
 		FEFFA6E024A3CB82002AF671 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6DF24A3CB82002AF671 /* Preview Assets.xcassets */; };
 		FEFFA6E324A3CB82002AF671 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */; };
 		FEFFA6EE24A3CB82002AF671 /* StroopHelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6ED24A3CB82002AF671 /* StroopHelloTests.swift */; };
@@ -36,12 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopStartButtonView.swift; sourceTree = "<group>"; };
 		FEFFA6D024A3CB6B002AF671 /* StroopHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroopHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FEFFA6D824A3CB6C002AF671 /* StroopHello.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StroopHello.xcdatamodel; sourceTree = "<group>"; };
 		FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FEFFA6DC24A3CB82002AF671 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEFFA6DC24A3CB82002AF671 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		FEFFA6DF24A3CB82002AF671 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEFFA6E224A3CB82002AF671 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FEFFA6E424A3CB82002AF671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,7 +106,8 @@
 				FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */,
 				FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */,
 				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
-				FEFFA6DC24A3CB82002AF671 /* Assets.xcassets */,
+				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
+				FEFFA6DC24A3CB82002AF671 /* assets.xcassets */,
 				FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */,
 				FEFFA6E424A3CB82002AF671 /* Info.plist */,
 				FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */,
@@ -245,7 +248,7 @@
 			files = (
 				FEFFA6E324A3CB82002AF671 /* LaunchScreen.storyboard in Resources */,
 				FEFFA6E024A3CB82002AF671 /* Preview Assets.xcassets in Resources */,
-				FEFFA6DD24A3CB82002AF671 /* Assets.xcassets in Resources */,
+				FEFFA6DD24A3CB82002AF671 /* assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +276,7 @@
 				FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */,
 				FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */,
 				FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */,
+				FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

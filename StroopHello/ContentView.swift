@@ -16,6 +16,7 @@ struct ContentView: View {
             HStack {
         
                 TabView(selection: $selection){
+                
                     Text("Home")
                         .font(.largeTitle)
                         .tabItem {
@@ -25,6 +26,7 @@ struct ContentView: View {
                             }
                         }
                         .tag(0)
+                    
                     Text("Results")
                         .font(.title)
                         .tabItem {
