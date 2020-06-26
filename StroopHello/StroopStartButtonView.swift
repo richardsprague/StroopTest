@@ -12,7 +12,7 @@ import SwiftUI
 
 struct StroopStartButtonView: View {
     @State var direction: String
-    @State var wasPushed = false
+
     
     var body: some View {
         NavigationView {
@@ -22,18 +22,7 @@ struct StroopStartButtonView: View {
             Text(direction)
                 .padding()
 
-            Button(action: {
-                self.wasPushed = true
-            }) {
-                Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
-                    .renderingMode(.original)
-                    .padding(.all)
-                    .background(Color.black)
-                    .shadow(radius: 10)
-            }
-            .alert(isPresented: $wasPushed) {
-                Alert(title: Text("Your Score"), message: Text(self.direction))
-            }
+            FancyButtonView(direction: direction)
             
             
         }
@@ -47,4 +36,31 @@ struct StroopStartButtonView_Previews: PreviewProvider {
     static var previews: some View {
         StroopStartButtonView(direction: "Left")
     }
+}
+
+struct FancyButtonView: View {
+    @State var direction: String
+    @State var wasPushed = false
+    
+    var body: some View {
+        Button(action: {
+            self.wasPushed = true
+        }) {
+            Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
+                .renderingMode(.original)
+                .padding(.all)
+                .background(Color.black)
+                .shadow(radius: 10)
+        }
+        .alert(isPresented: $wasPushed) {
+            Alert(title: Text("Your Score"), message: Text(self.direction))
+        }
+    }
+}
+
+struct DetailView: View {
+  let discipline: String
+  var body: some View {
+    Text(discipline)
+  }
 }
