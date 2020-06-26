@@ -17,8 +17,7 @@ struct ContentView: View {
         
                 TabView(selection: $selection){
                 
-                    Text("Home")
-                        .font(.largeTitle)
+                    StroopStartButtonView()
                         .tabItem {
                             VStack {
                                 Image("home-7")
