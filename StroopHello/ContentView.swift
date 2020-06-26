@@ -10,14 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
- 
+    @State var pressed : String
+    
+    
+    let  pressed_text = "something"
+    
     var body: some View {
  
             HStack {
         
                 TabView(selection: $selection){
                 
-                    StroopStartButtonView()
+                    StroopStartButtonView(direction: "Right")
                         .tabItem {
                             VStack {
                                 // Image("home-7")
@@ -53,6 +57,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(pressed: "something")
     }
 }

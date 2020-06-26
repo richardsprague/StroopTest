@@ -9,9 +9,13 @@
 import SwiftUI
 
 struct StroopStartButtonView: View {
+    @State var direction: String
+    
     var body: some View {
         VStack {
             Text("Tap the logo to start.")
+                .padding()
+            Text(direction)
            
                 
             Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
@@ -24,6 +28,6 @@ struct StroopStartButtonView: View {
 
 struct StroopStartButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        StroopStartButtonView()
+        StroopStartButtonView(direction: "Left")
     }
 }
