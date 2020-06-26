@@ -15,24 +15,30 @@ struct StroopStartButtonView: View {
     @State var wasPushed = false
     
     var body: some View {
+        NavigationView {
         VStack {
             Text("Tap the logo to start.")
                 .padding()
             Text(direction)
                 .padding()
-           Button(action: {
-            self.wasPushed = true
-           }) {
-               Text(/*@START_MENU_TOKEN@*/"Push Me"/*@END_MENU_TOKEN@*/)
-           }
-           .alert(isPresented: $wasPushed) {
-            Alert(title: Text("Your Score"), message: Text(self.direction))
+
+            Button(action: {
+                self.wasPushed = true
+            }) {
+                Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
+                    .renderingMode(.original)
+                    .padding(.all)
+                    .background(Color.black)
+                    .shadow(radius: 10)
             }
-                
-            Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
-                .padding(.all)
-                .background(Color.black)
-                .shadow(radius: 10)
+            .alert(isPresented: $wasPushed) {
+                Alert(title: Text("Your Score"), message: Text(self.direction))
+            }
+            
+            
+        }
+
+            NavigationLink(destination: STCardView()) { Text("content") }
         }
     }
 }

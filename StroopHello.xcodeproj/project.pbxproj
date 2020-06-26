@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */; };
+		FED79AC624A638E0003E08DD /* STCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC524A638E0003E08DD /* STCardView.swift */; };
 		FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */; };
 		FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */; };
 		FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopStartButtonView.swift; sourceTree = "<group>"; };
+		FED79AC524A638E0003E08DD /* STCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardView.swift; sourceTree = "<group>"; };
 		FEFFA6D024A3CB6B002AF671 /* StroopHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroopHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */,
 				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
 				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
+				FED79AC524A638E0003E08DD /* STCardView.swift */,
 				FEFFA6DC24A3CB82002AF671 /* assets.xcassets */,
 				FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */,
 				FEFFA6E424A3CB82002AF671 /* Info.plist */,
@@ -278,6 +281,7 @@
 				FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */,
 				FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
+				FED79AC624A638E0003E08DD /* STCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
