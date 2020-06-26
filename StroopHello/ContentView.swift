@@ -20,7 +20,8 @@ struct ContentView: View {
                     StroopStartButtonView()
                         .tabItem {
                             VStack {
-                                Image("home-7")
+                                // Image("home-7")
+                                Image(systemName: "arrow.2.squarepath")
                                 Text("First")
                             }
                         }
@@ -30,7 +31,7 @@ struct ContentView: View {
                         .font(.title)
                         .tabItem {
                             VStack {
-                                Image("Chart_Up")
+                                Image(systemName: "chart.bar.fill")
                                 Text("Results")
                             }
                         }

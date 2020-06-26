@@ -10,9 +10,15 @@ import SwiftUI
 
 struct StroopStartButtonView: View {
     var body: some View {
-        Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
-            .background(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/)
-        .shadow(radius: 10)
+        VStack {
+            Text("Tap the logo to start.")
+           
+                
+            Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
+                .padding(.all)
+                .background(Color.black)
+                .shadow(radius: 10)
+        }
     }
 }
 
