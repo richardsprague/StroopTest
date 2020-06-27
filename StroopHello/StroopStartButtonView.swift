@@ -15,7 +15,7 @@ struct StroopStartButtonView: View {
 
     
     var body: some View {
-        NavigationView {
+
         VStack {
             Text("Tap the logo to start.")
                 .padding()
@@ -27,8 +27,7 @@ struct StroopStartButtonView: View {
             
         }
 
-            NavigationLink(destination: STCardView()) { Text("content") }
-        }
+        
     }
 }
 
@@ -55,7 +54,7 @@ struct FancyButtonView: View {
             }
         }.sheet(isPresented: $wasPushed,
         onDismiss: { self.wasPushed = false }) {
-            DetailView(wasPushed:self.$wasPushed, discipline: "pushed")
+            STCardView(wasPushed:self.$wasPushed, discipline: "pushed")
          }
         
 //        .alert(isPresented: $wasPushed) {
@@ -64,15 +63,3 @@ struct FancyButtonView: View {
     }
 }
 
-struct DetailView: View {
-    @Binding var wasPushed: Bool
-  let discipline: String
-  var body: some View {
-    VStack {
-        Text(discipline)
-        Button(action: {self.wasPushed = false}) {
-        Text("Done")
-        }
-    }
-}
-}
