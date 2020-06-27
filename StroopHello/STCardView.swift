@@ -14,7 +14,27 @@ struct STCardView: View {
   let discipline: String
   var body: some View {
     VStack {
+        Rectangle()
+            .fill(Color.green)
+            .frame(width:300, height:400)
+            .padding()
+            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+        
         Text(discipline)
+        HStack {
+            Button(action: {self.wasPushed = false}){
+                Text("color1")
+            }.padding()
+            Button(action: {self.wasPushed = false}){
+                Text("color2")
+            }.padding()
+            Button(action: {self.wasPushed = false}){
+                Text("color3")
+            }.padding()
+        }
+        
+        
+
         Button(action: {self.wasPushed = false}) {
         Text("Done")
         }
@@ -25,8 +45,10 @@ struct STCardView: View {
                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
             
         }
+        
 
     }
+    
 }
 }
 

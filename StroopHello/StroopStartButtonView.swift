@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-
-
 struct StroopStartButtonView: View {
     @State var direction: String
 
@@ -40,6 +38,8 @@ struct StroopStartButtonView_Previews: PreviewProvider {
 struct FancyButtonView: View {
     @State var direction: String
     @State var wasPushed = false
+    
+ 
     
     var body: some View {
         NavigationView {
