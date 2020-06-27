@@ -43,24 +43,36 @@ struct FancyButtonView: View {
     @State var wasPushed = false
     
     var body: some View {
-        Button(action: {
-            self.wasPushed = true
-        }) {
-            Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
-                .renderingMode(.original)
-                .padding(.all)
-                .background(Color.black)
-                .shadow(radius: 10)
-        }
-        .alert(isPresented: $wasPushed) {
-            Alert(title: Text("Your Score"), message: Text(self.direction))
-        }
+        NavigationView {
+            Button(action: {
+                self.wasPushed = true
+            }) {
+                Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
+                    .renderingMode(.original)
+                    .padding(.all)
+                    .background(Color.black)
+                    .shadow(radius: 10)
+            }
+        }.sheet(isPresented: $wasPushed,
+        onDismiss: { self.wasPushed = false }) {
+            DetailView(wasPushed:self.$wasPushed, discipline: "pushed")
+         }
+        
+//        .alert(isPresented: $wasPushed) {
+//            Alert(title: Text("Your Score"), message: Text(self.direction))
+//        }
     }
 }
 
 struct DetailView: View {
+    @Binding var wasPushed: Bool
   let discipline: String
   var body: some View {
-    Text(discipline)
-  }
+    VStack {
+        Text(discipline)
+        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        Text("Done")
+        }
+    }
+}
 }
