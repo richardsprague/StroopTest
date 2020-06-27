@@ -70,7 +70,7 @@ struct DetailView: View {
   var body: some View {
     VStack {
         Text(discipline)
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+        Button(action: {self.wasPushed = false}) {
         Text("Done")
         }
     }
