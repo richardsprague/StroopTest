@@ -54,7 +54,7 @@ struct FancyButtonView: View {
             }
         }.sheet(isPresented: $wasPushed,
         onDismiss: { self.wasPushed = false }) {
-            STCardView(wasPushed:self.$wasPushed, discipline: "pushed")
+            STCardView(wasPushed:self.$wasPushed, discipline: STColor(message:"green"))
          }
         
 //        .alert(isPresented: $wasPushed) {

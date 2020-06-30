@@ -8,10 +8,24 @@
 
 import Foundation
 
+
+let allColors = ["red","green","blue"]
+
 //
-struct STColor {
+class STColor {
     var color: String
-    init(color:String){
-        self.color = color
+    var message: String
+    
+    init(message:String){
+        self.message = message
+        self.color = allColors[Int.random(in: 0...2)]
     }
+    
+    var colorChoices = [String]()
+    
+//    for _ in 1...3{
+//        colorChoices.append()allColors[Int.random(in: 0...2)]
+//    }
+    
+    
 }

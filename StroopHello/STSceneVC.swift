@@ -9,7 +9,6 @@
 import UIKit
 
 
-let allColors = ["red","green","blue"]
 
 class STSceneVC: UIViewController {
 
@@ -19,11 +18,7 @@ class STSceneVC: UIViewController {
         // Do any additional setup after loading the view.
         
         
-         var colorChoices = [String]()
-         
-         for _ in 1...3{
-             colorChoices.append(allColors[Int.random(in: 0...2)])
-         }
+
     }
     
 

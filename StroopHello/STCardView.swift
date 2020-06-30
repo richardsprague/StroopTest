@@ -13,7 +13,7 @@ struct STCardView: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
     
-  let discipline: String
+  let discipline: STColor
   var body: some View {
     VStack {
         Rectangle()
@@ -22,7 +22,7 @@ struct STCardView: View {
             .padding()
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         
-        Text(discipline)
+        Text(discipline.color)
         HStack {
             Button(action: {
                 self.wasPushed = false
@@ -61,7 +61,7 @@ struct STCardView: View {
 struct STCardView_Previews: PreviewProvider {
  
     static var previews: some View {
-        STCardView(wasPushed: .constant(false), discipline: "preview")
+        STCardView(wasPushed: .constant(false), discipline: STColor(message:"preview"))
         .environmentObject(STCardData())
     }
 }
