@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
-    @State var pressed : String
+    var pressed : String
     
     
     let  pressed_text = "something"
