@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE509E3524ABE5A80028DC12 /* STCardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3424ABE5A80028DC12 /* STCardData.swift */; };
+		FE509E3824ABFFCB0028DC12 /* STColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3724ABFFCB0028DC12 /* STColor.swift */; };
 		FE9F0C1D24A7FF8E00EDB445 /* STSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */; };
 		FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */; };
 		FED79AC624A638E0003E08DD /* STCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC524A638E0003E08DD /* STCardView.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		FE509E3424ABE5A80028DC12 /* STCardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardData.swift; sourceTree = "<group>"; };
+		FE509E3724ABFFCB0028DC12 /* STColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STColor.swift; sourceTree = "<group>"; };
 		FE9F0C1924A7F4D600EDB445 /* StroopPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = StroopPlayground.playground; path = ../../StroopPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSceneVC.swift; sourceTree = "<group>"; };
 		FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopStartButtonView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FE509E3424ABE5A80028DC12 /* STCardData.swift */,
+				FE509E3724ABFFCB0028DC12 /* STColor.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FE509E3524ABE5A80028DC12 /* STCardData.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
 				FED79AC624A638E0003E08DD /* STCardView.swift in Sources */,
+				FE509E3824ABFFCB0028DC12 /* STColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

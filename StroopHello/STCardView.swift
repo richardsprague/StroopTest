@@ -11,6 +11,8 @@ import SwiftUI
 
 struct STCardView: View {
     @Binding var wasPushed: Bool
+    @EnvironmentObject var STCardData: STCardData
+    
   let discipline: String
   var body: some View {
     VStack {
@@ -22,8 +24,11 @@ struct STCardView: View {
         
         Text(discipline)
         HStack {
-            Button(action: {self.wasPushed = false}){
-                Text("color1")
+            Button(action: {
+                self.wasPushed = false
+               // self.$STCardData.score
+            }){
+                Text("STCardData.score")
             }.padding()
             Button(action: {self.wasPushed = false}){
                 Text("color2")
@@ -57,5 +62,6 @@ struct STCardView_Previews: PreviewProvider {
  
     static var previews: some View {
         STCardView(wasPushed: .constant(false), discipline: "preview")
+        .environmentObject(STCardData())
     }
 }
