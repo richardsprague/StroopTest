@@ -12,12 +12,15 @@ import SwiftUI
 struct STCardView: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
+    @State private var counter: Int =  0
     
-  let card: STCard
+    var cardColor: Color = ColorManager.Random
+    
+    var card: STCard
   var body: some View {
     VStack {
         Rectangle()
-            .fill(Color.green)
+            .fill(cardColor)
             .frame(width:300, height:400)
             .padding()
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
@@ -25,10 +28,13 @@ struct STCardView: View {
         Text(card.color)
         HStack {
             Button(action: {
+                self.counter+=1
+                //self.cardColor = ColorManager.Random
                 self.wasPushed = false
+ 
                // self.$STCardData.score
             }){
-                Text("STCardData.score")
+                Text(card.message)
             }.padding()
             Button(action: {self.wasPushed = false}){
                 Text("color2")
@@ -43,13 +49,14 @@ struct STCardView: View {
         Button(action: {self.wasPushed = false}) {
         Text("Done")
         }
-
+        Text("State: " + String(self.counter))
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
             Image(systemName: "backward.fill")
                 .resizable()
                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
             
         }
+
         
 
     }

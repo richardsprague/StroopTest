@@ -39,7 +39,7 @@ struct FancyButtonView: View {
     var direction: String
     @State var wasPushed = false
     
- 
+    @State var card = STCard(message:"greenish")
     
     var body: some View {
         NavigationView {
@@ -53,13 +53,13 @@ struct FancyButtonView: View {
                     .shadow(radius: 10)
             }
         }.sheet(isPresented: $wasPushed,
-        onDismiss: { self.wasPushed = false }) {
-            STCardView(wasPushed:self.$wasPushed, card: STCard(message:"green"))
-         }
+                onDismiss: { self.wasPushed = false }) {
+                    STCardView(wasPushed:self.$wasPushed, card: STCard(message:"from startbutton"))
+        }
         
-//        .alert(isPresented: $wasPushed) {
-//            Alert(title: Text("Your Score"), message: Text(self.direction))
-//        }
+        //        .alert(isPresented: $wasPushed) {
+        //            Alert(title: Text("Your Score"), message: Text(self.direction))
+        //        }
     }
 }
 
