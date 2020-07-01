@@ -16,12 +16,12 @@ let allColors = ["Red","Green","Blue"]
 //
 class STCard {
     var color: String
-    var sColor: ColorManager
+    var sColor: Color
     var message: String
     
     init(message:String){
         self.message = message
-        self.sColor = ColorManager(color: "Black")
+        self.sColor = ColorManager(color: "Black").color
         self.color = allColors[Int.random(in: 0...2)]
     }
     

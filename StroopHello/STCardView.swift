@@ -23,9 +23,9 @@ struct STCardView: View {
             .fill(cardColor.color)
             .frame(width:300, height:400)
             .padding()
-            .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+            .border(self.card.sColor, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         
-        Text(card.color)
+        Text(self.card.color)
         HStack {
             Button(action: {
                 self.counter+=1
@@ -35,7 +35,7 @@ struct STCardView: View {
  
                // self.$STCardData.score
             }){
-                Text(card.message)
+                Text(self.card.message)
             }.padding()
             Button(action: {self.wasPushed = false}){
                 Text("color2")
