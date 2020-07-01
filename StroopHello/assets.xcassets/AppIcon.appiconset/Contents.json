@@ -6,11 +6,13 @@
       "size" : "20x20"
     },
     {
+      "filename" : "Stroop Icon60x60.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "StroopIcon58x58.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -21,6 +23,7 @@
       "size" : "29x29"
     },
     {
+      "filename" : "StroopIcon 80x80.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
@@ -31,6 +34,7 @@
       "size" : "40x40"
     },
     {
+      "filename" : "StroopIcon120x120.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
@@ -51,6 +55,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "StroopIcon29x29.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "29x29"
