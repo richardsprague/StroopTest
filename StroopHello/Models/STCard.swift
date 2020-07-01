@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+import SwiftUI
 
 
 let allColors = ["Red","Green","Blue"]
@@ -16,12 +16,12 @@ let allColors = ["Red","Green","Blue"]
 //
 class STCard {
     var color: String
-    var sColor: String
+    var sColor: ColorManager
     var message: String
     
     init(message:String){
         self.message = message
-        self.sColor = "scolor"
+        self.sColor = ColorManager(color: "Black")
         self.color = allColors[Int.random(in: 0...2)]
     }
     

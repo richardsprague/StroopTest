@@ -14,13 +14,13 @@ struct STCardView: View {
     @EnvironmentObject var STCardData: STCardData
     @State private var counter: Int =  0
     
-    var cardColor: Color = ColorManager.Random
+    var cardColor: ColorManager //Randomize()
     
     var card: STCard
   var body: some View {
     VStack {
         Rectangle()
-            .fill(cardColor)
+            .fill(cardColor.color)
             .frame(width:300, height:400)
             .padding()
             .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
@@ -29,8 +29,9 @@ struct STCardView: View {
         HStack {
             Button(action: {
                 self.counter+=1
+                self.cardColor.Randomize()
                 //self.cardColor = ColorManager.Random
-                self.wasPushed = false
+                //self.wasPushed = false
  
                // self.$STCardData.score
             }){
@@ -68,7 +69,7 @@ struct STCardView: View {
 struct STCardView_Previews: PreviewProvider {
  
     static var previews: some View {
-        STCardView(wasPushed: .constant(false), card: STCard(message:"preview"))
+        STCardView(wasPushed: .constant(false), cardColor: ColorManager.init(color: "Red"), card: STCard(message:"preview"))
         .environmentObject(STCardData())
     }
 }

@@ -17,9 +17,12 @@ class ColorManager {
     static let Green = Color("Green")
     static let Blue = Color("Blue")
     static let Red = Color("Red")
-    static let Random = Color(allColors[Int.random(in: 0...2)])
+    let Random = Color(allColors[Int.random(in: 0...2)])
     init(color:String) {
         self.color = Color(color)
+    }
+    func Randomize(){
+        color =  Color(allColors[Int.random(in: 0...2)])
     }
     
 
