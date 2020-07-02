@@ -18,11 +18,13 @@ class STCard {
     var color: String
     var sColor: Color
     var message: String
+    var colors = [String]()
     
     init(message:String){
         self.message = message
         self.sColor = ColorManager(color: "Black").color
         self.color = allColors[Int.random(in: 0...2)]
+        self.colors = ["Red","Blue","Green"]
     }
     
 //   var colorChoices = [String]()

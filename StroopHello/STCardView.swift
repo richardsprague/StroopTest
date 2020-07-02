@@ -37,12 +37,12 @@ struct STCardView: View {
             }){
                 Text(self.card.message)
             }.padding()
+            ForEach(self.card.colors, id: \.self){ color in
             Button(action: {self.wasPushed = false}){
-                Text("color2")
+                Text(color)
             }.padding()
-            Button(action: {self.wasPushed = false}){
-                Text("color3")
-            }.padding()
+            }
+     
         }
         
         
