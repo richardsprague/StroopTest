@@ -12,7 +12,7 @@ import SwiftUI
 struct STCardView: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
-    @State private var counter: Int =  0
+    @State private var counter = 0
     
     var card: STCard
   var body: some View {
@@ -26,8 +26,10 @@ struct STCardView: View {
         Text(self.card.color)
         HStack {
             Button(action: {
-                self.counter+=1
+ 
                 self.card.randomize()
+                self.card.score+=1
+                self.counter = self.card.score
                 //self.card
                 //self.cardColor = ColorManager.Random
                 //self.wasPushed = false

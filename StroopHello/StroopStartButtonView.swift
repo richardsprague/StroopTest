@@ -37,14 +37,12 @@ struct StroopStartButtonView_Previews: PreviewProvider {
 
 struct FancyButtonView: View {
     var direction: String
-    @State var wasPushed = false
-    
-    var card = STCard(message:"greenish")
-    
+    @State var wasPushedx = false
+     
     var body: some View {
         NavigationView {
             Button(action: {
-                self.wasPushed = true
+                self.wasPushedx = true
             }) {
                 Image(/*@START_MENU_TOKEN@*/"StroopStartButton114x114"/*@END_MENU_TOKEN@*/)
                     .renderingMode(.original)
@@ -52,9 +50,9 @@ struct FancyButtonView: View {
                     .background(Color.black)
                     .shadow(radius: 10)
             }
-        }.sheet(isPresented: $wasPushed,
-                onDismiss: { self.wasPushed = false }) {
-                    STCardView(wasPushed:self.$wasPushed, card: STCard(message:"from startbutton"))
+        }.sheet(isPresented: $wasPushedx,
+                onDismiss: { self.wasPushedx = false }) {
+                    STCardView(wasPushed:self.$wasPushedx, card: STCard(message:"from startbutton"))
         }
         
         //        .alert(isPresented: $wasPushed) {

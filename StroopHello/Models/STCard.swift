@@ -19,9 +19,11 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
     var sColor: Color
     var message: String
     var buttonsShuffled = [String]()
+    var score: Int
 
     
     init(message:String){
+        self.score = 0
         self.message = message
         self.color = ALLCOLORS[Int.random(in: 0...(ALLCOLORS.count - 1))]
         self.sColor = ColorManager(color: self.color).color
@@ -32,6 +34,7 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         self.color = ALLCOLORS[Int.random(in: 0...2)]
         self.sColor = ColorManager(color: color ).color
     }
+
     
 //   var colorChoices = [String]()
     
