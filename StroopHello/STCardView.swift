@@ -14,8 +14,6 @@ struct STCardView: View {
     @EnvironmentObject var STCardData: STCardData
     @State private var counter: Int =  0
     
-    var cardColor: ColorManager //Randomize()
-    
     var card: STCard
   var body: some View {
     VStack {
@@ -38,7 +36,7 @@ struct STCardView: View {
             }){
                 Text(self.card.message)
             }.padding()
-            ForEach(self.card.colors, id: \.self){ color in
+            ForEach(self.card.buttonsShuffled, id: \.self){ color in
             Button(action: {self.wasPushed = false}){
                 Text(color)
             }.padding()
@@ -70,7 +68,7 @@ struct STCardView: View {
 struct STCardView_Previews: PreviewProvider {
  
     static var previews: some View {
-        STCardView(wasPushed: .constant(false), cardColor: ColorManager.init(color: "Red"), card: STCard(message:"preview"))
+        STCardView(wasPushed: .constant(false), card: STCard(message:"preview"))
         .environmentObject(STCardData())
     }
 }
