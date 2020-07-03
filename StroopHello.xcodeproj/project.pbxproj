@@ -238,6 +238,7 @@
 				TargetAttributes = {
 					FEFFA6CF24A3CB6B002AF671 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1150;
 					};
 					FEFFA6E824A3CB82002AF671 = {
 						CreatedOnToolsVersion = 11.5;
@@ -476,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StroopHello/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -486,6 +488,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -495,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"StroopHello/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -505,6 +511,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Ensembio.StroopHello;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

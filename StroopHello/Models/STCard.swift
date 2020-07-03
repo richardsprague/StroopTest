@@ -25,7 +25,7 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         self.message = message
         self.color = ALLCOLORS[Int.random(in: 0...(ALLCOLORS.count - 1))]
         self.sColor = ColorManager(color: self.color).color
-        self.buttonsShuffled = ["Red","Blue","Green"]
+        self.buttonsShuffled = ALLCOLORS.shuffled()
     }
     
     func randomize(){
