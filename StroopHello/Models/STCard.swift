@@ -14,7 +14,7 @@ import SwiftUI
 let allColors = ["Red","Green","Blue"]
 
 //
-class STCard {
+class STCard: Identifiable {  // Identifiable protocol makes it easier to loop in a View
     var color: String
     var sColor: Color
     var message: String
@@ -22,7 +22,7 @@ class STCard {
     
     init(message:String){
         self.message = message
-        self.sColor = ColorManager(color: "Black").color
+        self.sColor = ColorManager(color: "Blue").color
         self.color = allColors[Int.random(in: 0...2)]
         self.colors = ["Red","Blue","Green"]
     }
