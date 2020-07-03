@@ -27,6 +27,11 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         self.colors = ["Red","Blue","Green"]
     }
     
+    func randomize(){
+        self.color = allColors[Int.random(in: 0...2)]
+        self.sColor = ColorManager(color: color ).color
+    }
+    
 //   var colorChoices = [String]()
     
 //    for _ in 1...3{

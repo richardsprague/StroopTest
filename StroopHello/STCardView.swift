@@ -20,7 +20,7 @@ struct STCardView: View {
   var body: some View {
     VStack {
         Rectangle()
-            .fill(cardColor.color)
+            .fill(self.card.sColor)
             .frame(width:300, height:400)
             .padding()
             .border(self.card.sColor, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
@@ -29,7 +29,8 @@ struct STCardView: View {
         HStack {
             Button(action: {
                 self.counter+=1
-                self.cardColor.Randomize()
+                self.card.randomize()
+                //self.card
                 //self.cardColor = ColorManager.Random
                 //self.wasPushed = false
  
