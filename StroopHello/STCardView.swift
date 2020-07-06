@@ -11,11 +11,8 @@ import SwiftUI
 struct STCardView: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
-    @State private var counter = 0
     @ObservedObject var viewModel = STCardViewModel(message: "fromView")
 
-    var card: STCard
-    
   var body: some View {
     VStack {
         Rectangle()
@@ -28,11 +25,8 @@ struct STCardView: View {
         HStack {
             Button(action: {
  
-                //self.card.randomize()
                 self.viewModel.randomize()
                 self.viewModel.score+=1
-                self.counter = self.viewModel.score
-
                 
             }){
                 Text(self.viewModel.message)
@@ -62,7 +56,7 @@ struct STCardView: View {
 
 struct STCardView_Previews: PreviewProvider {
     static var previews: some View {
-        STCardView(wasPushed: .constant(false), card: STCard(message:"preview"))
+        STCardView(wasPushed: .constant(false))
         .environmentObject(STCardData())
     }
 }

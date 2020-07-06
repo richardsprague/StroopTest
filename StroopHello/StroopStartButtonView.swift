@@ -52,7 +52,7 @@ struct FancyButtonView: View {
             }
         }.sheet(isPresented: $wasPushedx,
                 onDismiss: { self.wasPushedx = false }) {
-                    STCardView(wasPushed:self.$wasPushedx, card: STCard(message:"from startbutton"))
+                    STCardView(wasPushed:self.$wasPushedx)
         }
         
         //        .alert(isPresented: $wasPushed) {

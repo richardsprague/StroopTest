@@ -33,6 +33,7 @@ class STCardViewModel:  ObservableObject {
     func randomize(){
         self.card.randomize()
         self.color = self.card.sColor
+        self.colorname = self.card.color
     }
 
 }
