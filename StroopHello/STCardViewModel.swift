@@ -7,13 +7,33 @@
 //
 
 import SwiftUI
+import Combine
 
 
 class STCardViewModel:  ObservableObject {
     
+     var card: STCard
+    
+    @Published private(set) var color: Color
+    var score: Int
+    var colorname: String
+    var buttonsShuffled = [String]()
+    var message: String
    
     
-    init(){ 
-}
+    init(message:String){
+        self.card = .init(message: message)
+        self.message = self.card.message
+        self.color = self.card.sColor
+        self.colorname = self.card.color
+        self.buttonsShuffled = self.card.buttonsShuffled
+        self.score = 0
+    }
+    
+    func randomize(){
+        self.card.randomize()
+        self.color = self.card.sColor
+    }
+
 }
 

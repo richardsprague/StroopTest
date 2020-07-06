@@ -12,29 +12,32 @@ struct STCardView: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
     @State private var counter = 0
-    
+    @ObservedObject var viewModel = STCardViewModel(message: "fromView")
+
     var card: STCard
+    
   var body: some View {
     VStack {
         Rectangle()
-            .fill(self.card.sColor)
+            .fill(viewModel.color)
             .frame(width:300, height:400)
             .padding()
-            .border(self.card.sColor, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+            .border(self.viewModel.color, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         
-        Text(card.color)
+        Text(viewModel.colorname)
         HStack {
             Button(action: {
  
-                self.card.randomize()
-                self.card.score+=1
-                self.counter = self.card.score
+                //self.card.randomize()
+                self.viewModel.randomize()
+                self.viewModel.score+=1
+                self.counter = self.viewModel.score
 
                 
             }){
-                Text(self.card.message)
+                Text(self.viewModel.message)
             }.padding()
-            ForEach(self.card.buttonsShuffled, id: \.self){ color in
+            ForEach(self.viewModel.buttonsShuffled, id: \.self){ color in
             Button(action: {self.wasPushed = false}){
                 Text(color)
             }.padding()
@@ -47,7 +50,7 @@ struct STCardView: View {
         Button(action: {self.wasPushed = false}) {
         Text("Done")
         }
-        Text("State: " + String(self.counter))
+        Text("State: " + String(self.viewModel.score))
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
             Image(systemName: "backward.fill")
                 .resizable()
