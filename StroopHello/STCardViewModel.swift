@@ -9,7 +9,7 @@
 import SwiftUI
 
 
-struct STCardView: View {
+struct STCardViewModel: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
     @State private var counter = 0
@@ -23,18 +23,15 @@ struct STCardView: View {
             .padding()
             .border(self.card.sColor, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         
-        Text(self.card.color)
+        Text(card.color)
         HStack {
             Button(action: {
  
                 self.card.randomize()
                 self.card.score+=1
                 self.counter = self.card.score
-                //self.card
-                //self.cardColor = ColorManager.Random
-                //self.wasPushed = false
- 
-               // self.$STCardData.score
+
+                
             }){
                 Text(self.card.message)
             }.padding()
@@ -70,7 +67,7 @@ struct STCardView: View {
 struct STCardView_Previews: PreviewProvider {
  
     static var previews: some View {
-        STCardView(wasPushed: .constant(false), card: STCard(message:"preview"))
+        STCardViewModel(wasPushed: .constant(false), card: STCard(message:"preview"))
         .environmentObject(STCardData())
     }
 }

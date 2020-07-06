@@ -35,12 +35,4 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         self.sColor = ColorManager(color: color ).color
     }
 
-    
-//   var colorChoices = [String]()
-    
-//    for _ in 1...3{
-//        colorChoices.append()allColors[Int.random(in: 0...2)]
-//    }
-    
-    
 }

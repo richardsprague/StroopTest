@@ -13,7 +13,7 @@
 		FE509E3C24ACC7560028DC12 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3B24ACC7560028DC12 /* ColorManager.swift */; };
 		FE9F0C1D24A7FF8E00EDB445 /* STSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */; };
 		FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */; };
-		FED79AC624A638E0003E08DD /* STCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC524A638E0003E08DD /* STCardView.swift */; };
+		FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC524A638E0003E08DD /* STCardViewModel.swift */; };
 		FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */; };
 		FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */; };
 		FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */; };
@@ -50,7 +50,7 @@
 		FE9F0C1924A7F4D600EDB445 /* StroopPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = StroopPlayground.playground; path = ../../StroopPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSceneVC.swift; sourceTree = "<group>"; };
 		FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopStartButtonView.swift; sourceTree = "<group>"; };
-		FED79AC524A638E0003E08DD /* STCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardView.swift; sourceTree = "<group>"; };
+		FED79AC524A638E0003E08DD /* STCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardViewModel.swift; sourceTree = "<group>"; };
 		FEFFA6D024A3CB6B002AF671 /* StroopHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroopHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
 				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
 				FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */,
-				FED79AC524A638E0003E08DD /* STCardView.swift */,
+				FED79AC524A638E0003E08DD /* STCardViewModel.swift */,
 				FE509E3924ACC6000028DC12 /* Colors.xcassets */,
 				FEFFA6DC24A3CB82002AF671 /* assets.xcassets */,
 				FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */,
@@ -311,7 +311,7 @@
 				FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */,
 				FE509E3524ABE5A80028DC12 /* STCardData.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
-				FED79AC624A638E0003E08DD /* STCardView.swift in Sources */,
+				FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */,
 				FE509E3824ABFFCB0028DC12 /* STCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
