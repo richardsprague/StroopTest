@@ -15,8 +15,8 @@ class STCardViewModel:  ObservableObject {
      var card: STCard
     
     @Published private(set) var color: Color
-    var score: Int
-    var colorname: String
+    @Published var score: Int
+    var colorName: String
     var buttonsShuffled = [String]()
     var message: String
    
@@ -25,19 +25,27 @@ class STCardViewModel:  ObservableObject {
         self.card = .init(message: message)
         self.message = self.card.message
         self.color = self.card.sColor
-        self.colorname = self.card.color
+        self.colorName = self.card.color
         self.buttonsShuffled = self.card.buttonsShuffled
         self.score = 0
     }
     
-    func randomize(){
+    func changeCardColor(){
         self.card.randomize()
         self.color = self.card.sColor
-        self.colorname = self.card.color
+        self.colorName = self.card.color
     }
     
     func matchesCardColor(colorString:String) -> Bool {
-        return colorString == self.colorname ? true : false
+        
+        if self.colorName == colorString {
+            self.score+=1
+            return true
+        }
+        else {
+            return false
+            
+        }
         
     }
 

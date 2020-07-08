@@ -34,5 +34,19 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         self.color = ALLCOLORS[Int.random(in: 0...2)]
         self.sColor = ColorManager(color: color ).color
     }
+    
+    func matchesCardColor(colorString:String) -> Bool {
+        
+        if colorString == self.color {
+            self.score+=1
+            return true
+        }
+        else {
+            return false
+            
+        }
+        
+    }
+
 
 }

@@ -11,7 +11,7 @@ import SwiftUI
 struct STCardView: View {
     @Binding var wasPushed: Bool
     @EnvironmentObject var STCardData: STCardData
-    @ObservedObject var viewModel = STCardViewModel(message: "fromView")
+    @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
   var body: some View {
     VStack {
@@ -21,12 +21,11 @@ struct STCardView: View {
             .padding()
             .border(self.viewModel.color, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         
-        Text(viewModel.colorname)
+        Text(viewModel.colorName)
         HStack {
             Button(action: {
 
-                self.viewModel.randomize()
-                self.viewModel.score+=1
+                self.viewModel.changeCardColor()
                 
             }){
                 Text(self.viewModel.message)
@@ -34,7 +33,6 @@ struct STCardView: View {
             ForEach(self.viewModel.buttonsShuffled, id: \.self){ color in
             Button(action: {
                 self.wasPushed =                 self.viewModel.matchesCardColor(colorString: color)
-                self.viewModel.score+=1
             }){
                 Text(color)
             }.padding()
@@ -47,7 +45,7 @@ struct STCardView: View {
         Button(action: {self.wasPushed = false}) {
         Text("Done")
         }
-        Text("State: " + String(self.viewModel.score))
+        Text("Score: " + String(self.viewModel.score))
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
             Image(systemName: "backward.fill")
                 .resizable()
