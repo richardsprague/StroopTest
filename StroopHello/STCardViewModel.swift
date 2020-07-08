@@ -35,6 +35,11 @@ class STCardViewModel:  ObservableObject {
         self.color = self.card.sColor
         self.colorname = self.card.color
     }
+    
+    func matchesCardColor(colorString:String) -> Bool {
+        return colorString == self.colorname ? true : false
+        
+    }
 
 }
 

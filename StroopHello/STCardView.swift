@@ -24,7 +24,7 @@ struct STCardView: View {
         Text(viewModel.colorname)
         HStack {
             Button(action: {
- 
+
                 self.viewModel.randomize()
                 self.viewModel.score+=1
                 
@@ -32,7 +32,10 @@ struct STCardView: View {
                 Text(self.viewModel.message)
             }.padding()
             ForEach(self.viewModel.buttonsShuffled, id: \.self){ color in
-            Button(action: {self.wasPushed = false}){
+            Button(action: {
+                self.wasPushed =                 self.viewModel.matchesCardColor(colorString: color)
+                self.viewModel.score+=1
+            }){
                 Text(color)
             }.padding()
             }
