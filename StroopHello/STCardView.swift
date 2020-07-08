@@ -10,7 +10,7 @@ import SwiftUI
 
 struct STCardView: View {
     @Binding var wasPushed: Bool
-    @EnvironmentObject var STCardData: STCardData
+    @EnvironmentObject var userData: STData
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
   var body: some View {
@@ -58,6 +58,6 @@ struct STCardView: View {
 struct STCardView_Previews: PreviewProvider {
     static var previews: some View {
         STCardView(wasPushed: .constant(false))
-        .environmentObject(STCardData())
+        .environmentObject(STData())
     }
 }

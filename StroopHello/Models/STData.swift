@@ -1,5 +1,5 @@
 //
-//  STCardData.swift
+//  STData.swift
 //  StroopHello
 //
 //  Created by Richard Sprague on 6/30/20.
@@ -9,7 +9,7 @@
 import SwiftUI
 import Combine
 
-final class STCardData: ObservableObject  {
+final class STData: ObservableObject  {
     @Published var score = 0
 
 }
