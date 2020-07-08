@@ -42,7 +42,9 @@ struct STCardView: View {
         
         
 
-        Button(action: {self.wasPushed = false}) {
+        Button(action: {
+            self.userData.score = self.viewModel.score
+            self.wasPushed = false}) {
         Text("Done")
         }
         Text("Score: " + String(self.viewModel.score))

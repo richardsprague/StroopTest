@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct StroopStartButtonView: View {
+      @EnvironmentObject var userData: STData
     var direction: String
 
     
@@ -17,10 +18,10 @@ struct StroopStartButtonView: View {
         VStack {
             Text("Tap the logo to start.")
                 .padding()
-            Text(direction)
+            Text("Score:" + String(self.userData.score))
                 .padding()
 
-            FancyButtonView(direction: direction)
+            FancyButtonView(direction: direction).environmentObject(self.userData)
             
             
         }
@@ -37,6 +38,7 @@ struct StroopStartButtonView_Previews: PreviewProvider {
 
 struct FancyButtonView: View {
     var direction: String
+      @EnvironmentObject var userData: STData
     @State var wasPushedx = false
      
     var body: some View {
@@ -52,7 +54,7 @@ struct FancyButtonView: View {
             }
         }.sheet(isPresented: $wasPushedx,
                 onDismiss: { self.wasPushedx = false }) {
-                    STCardView(wasPushed:self.$wasPushedx)
+                    STCardView(wasPushed:self.$wasPushedx).environmentObject(self.userData)
         }
         
         //        .alert(isPresented: $wasPushed) {

@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
+    @EnvironmentObject var userData: STData
     var pressed : String
     
     
@@ -30,6 +31,7 @@ struct ContentView: View {
                             }
                         }
                         .tag(0)
+                    .environmentObject(self.userData)
                     
                     Text("Results")
                         .font(.title)
