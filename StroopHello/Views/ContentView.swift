@@ -33,8 +33,7 @@ struct ContentView: View {
                         .tag(0)
                     .environmentObject(self.userData)
                     
-                    Text("Results")
-                        .font(.title)
+                   STResultsView()
                         .tabItem {
                             VStack {
                                 Image(systemName: "chart.bar.fill")
@@ -42,8 +41,8 @@ struct ContentView: View {
                             }
                         }
                         .tag(1)
-                    Text("Settings are here")
-                        .font(.title)
+                   .environmentObject(self.userData)
+                    STSettingsView()
                         .tabItem {
                             VStack {
                                 Image("config30x30")
@@ -51,6 +50,7 @@ struct ContentView: View {
                             }
                         }
                         .tag(2)
+                    .environmentObject(self.userData)
                 }
             }
         }

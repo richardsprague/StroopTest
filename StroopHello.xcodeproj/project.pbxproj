@@ -13,6 +13,8 @@
 		FE509E3A24ACC6000028DC12 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE509E3924ACC6000028DC12 /* Colors.xcassets */; };
 		FE509E3C24ACC7560028DC12 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3B24ACC7560028DC12 /* ColorManager.swift */; };
 		FE9F0C1D24A7FF8E00EDB445 /* STSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */; };
+		FEAB734524B7C0A50033C702 /* STSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734424B7C0A50033C702 /* STSettingsView.swift */; };
+		FEAB734724B7C0C80033C702 /* STResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734624B7C0C80033C702 /* STResultsView.swift */; };
 		FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */; };
 		FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC524A638E0003E08DD /* STCardViewModel.swift */; };
 		FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */; };
@@ -51,6 +53,8 @@
 		FE509E3B24ACC7560028DC12 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorManager.swift; path = Models/ColorManager.swift; sourceTree = "<group>"; };
 		FE9F0C1924A7F4D600EDB445 /* StroopPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = StroopPlayground.playground; path = ../../StroopPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSceneVC.swift; sourceTree = "<group>"; };
+		FEAB734424B7C0A50033C702 /* STSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsView.swift; sourceTree = "<group>"; };
+		FEAB734624B7C0C80033C702 /* STResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STResultsView.swift; sourceTree = "<group>"; };
 		FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopStartButtonView.swift; sourceTree = "<group>"; };
 		FED79AC524A638E0003E08DD /* STCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardViewModel.swift; sourceTree = "<group>"; };
 		FEFFA6D024A3CB6B002AF671 /* StroopHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroopHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FEAB734824B7C0E00033C702 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
+				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
+				FE32500224B3A4260099735B /* STCardView.swift */,
+				FEAB734624B7C0C80033C702 /* STResultsView.swift */,
+				FEAB734424B7C0A50033C702 /* STSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FEFFA6C724A3CB6B002AF671 = {
 			isa = PBXGroup;
 			children = (
@@ -132,11 +148,9 @@
 				FE9F0C1924A7F4D600EDB445 /* StroopPlayground.playground */,
 				FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */,
 				FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */,
-				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
-				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
+				FEAB734824B7C0E00033C702 /* Views */,
 				FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */,
 				FED79AC524A638E0003E08DD /* STCardViewModel.swift */,
-				FE32500224B3A4260099735B /* STCardView.swift */,
 				FE509E3924ACC6000028DC12 /* Colors.xcassets */,
 				FEFFA6DC24A3CB82002AF671 /* assets.xcassets */,
 				FEFFA6E124A3CB82002AF671 /* LaunchScreen.storyboard */,
@@ -313,9 +327,11 @@
 				FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */,
 				FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */,
 				FE509E3524ABE5A80028DC12 /* STData.swift in Sources */,
+				FEAB734724B7C0C80033C702 /* STResultsView.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
 				FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */,
 				FE509E3824ABFFCB0028DC12 /* STCard.swift in Sources */,
+				FEAB734524B7C0A50033C702 /* STSettingsView.swift in Sources */,
 				FE32500324B3A4260099735B /* STCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
