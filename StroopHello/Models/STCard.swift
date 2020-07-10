@@ -20,14 +20,21 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
     var message: String
     var buttonsShuffled = [String]()
     var score: Int
+    var startDate: Date
+    var duration: Double
+    var cardInfo: StroopData
+
 
     
     init(message:String){
         self.score = 0
         self.message = message
+        self.startDate = Date()
+        self.duration = Date().timeIntervalSince(self.startDate)
         self.color = ALLCOLORS[Int.random(in: 0...(ALLCOLORS.count - 1))]
         self.sColor = ColorManager(color: self.color).color
         self.buttonsShuffled = ALLCOLORS.shuffled()
+        self.cardInfo = StroopData()
     }
     
     func randomize(){

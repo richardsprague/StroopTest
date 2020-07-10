@@ -11,5 +11,6 @@ import Combine
 
 final class STData: ObservableObject  {
     @Published var score = 0
+    @Published var date = Date()
 
 }

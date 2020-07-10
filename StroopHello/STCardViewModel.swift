@@ -17,6 +17,7 @@ class STCardViewModel:  ObservableObject {
     @Published private(set) var color: Color
     @Published var score: Int
     var colorName: String
+    var date: Date
     var buttonsShuffled = [String]()
     var message: String
    
@@ -26,6 +27,7 @@ class STCardViewModel:  ObservableObject {
         self.message = self.card.message
         self.color = self.card.sColor
         self.colorName = self.card.color
+        self.date = Date()
         self.buttonsShuffled = self.card.buttonsShuffled
         self.score = 0
     }

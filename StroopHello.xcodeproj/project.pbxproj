@@ -15,7 +15,8 @@
 		FE9F0C1D24A7FF8E00EDB445 /* STSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */; };
 		FEAB734524B7C0A50033C702 /* STSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734424B7C0A50033C702 /* STSettingsView.swift */; };
 		FEAB734724B7C0C80033C702 /* STResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734624B7C0C80033C702 /* STResultsView.swift */; };
-		FEAB734B24B7CA2A0033C702 /* ensembioStroop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734924B7CA2A0033C702 /* ensembioStroop.xcdatamodeld */; };
+		FEAB734E24B814150033C702 /* StroopData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734C24B814150033C702 /* StroopData+CoreDataClass.swift */; };
+		FEAB734F24B814150033C702 /* StroopData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734D24B814150033C702 /* StroopData+CoreDataProperties.swift */; };
 		FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */; };
 		FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED79AC524A638E0003E08DD /* STCardViewModel.swift */; };
 		FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFFA6D324A3CB6C002AF671 /* AppDelegate.swift */; };
@@ -56,7 +57,8 @@
 		FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSceneVC.swift; sourceTree = "<group>"; };
 		FEAB734424B7C0A50033C702 /* STSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsView.swift; sourceTree = "<group>"; };
 		FEAB734624B7C0C80033C702 /* STResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STResultsView.swift; sourceTree = "<group>"; };
-		FEAB734A24B7CA2A0033C702 /* ensembioStroop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ensembioStroop.xcdatamodel; sourceTree = "<group>"; };
+		FEAB734C24B814150033C702 /* StroopData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StroopData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FEAB734D24B814150033C702 /* StroopData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StroopData+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StroopStartButtonView.swift; sourceTree = "<group>"; };
 		FED79AC524A638E0003E08DD /* STCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardViewModel.swift; sourceTree = "<group>"; };
 		FEFFA6D024A3CB6B002AF671 /* StroopHello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StroopHello.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,7 +147,8 @@
 		FEFFA6D224A3CB6B002AF671 /* StroopHello */ = {
 			isa = PBXGroup;
 			children = (
-				FEAB734924B7CA2A0033C702 /* ensembioStroop.xcdatamodeld */,
+				FEAB734C24B814150033C702 /* StroopData+CoreDataClass.swift */,
+				FEAB734D24B814150033C702 /* StroopData+CoreDataProperties.swift */,
 				FE509E3B24ACC7560028DC12 /* ColorManager.swift */,
 				FE509E3624ABE5B10028DC12 /* Models */,
 				FE9F0C1924A7F4D600EDB445 /* StroopPlayground.playground */,
@@ -331,9 +334,10 @@
 				FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */,
 				FE509E3524ABE5A80028DC12 /* STData.swift in Sources */,
 				FEAB734724B7C0C80033C702 /* STResultsView.swift in Sources */,
+				FEAB734F24B814150033C702 /* StroopData+CoreDataProperties.swift in Sources */,
+				FEAB734E24B814150033C702 /* StroopData+CoreDataClass.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
 				FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */,
-				FEAB734B24B7CA2A0033C702 /* ensembioStroop.xcdatamodeld in Sources */,
 				FE509E3824ABFFCB0028DC12 /* STCard.swift in Sources */,
 				FEAB734524B7C0A50033C702 /* STSettingsView.swift in Sources */,
 				FE32500324B3A4260099735B /* STCardView.swift in Sources */,
@@ -663,16 +667,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FEAB734924B7CA2A0033C702 /* ensembioStroop.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FEAB734A24B7CA2A0033C702 /* ensembioStroop.xcdatamodel */,
-			);
-			currentVersion = FEAB734A24B7CA2A0033C702 /* ensembioStroop.xcdatamodel */;
-			path = ensembioStroop.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		FEFFA6D724A3CB6C002AF671 /* StroopHello.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

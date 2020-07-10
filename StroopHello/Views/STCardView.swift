@@ -13,6 +13,13 @@ struct STCardView: View {
     @EnvironmentObject var userData: STData
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
+ 
+
+        @Environment(\.managedObjectContext) var managedObjectContext
+
+    
+    
+    
   var body: some View {
     VStack {
         Rectangle()
@@ -44,6 +51,7 @@ struct STCardView: View {
 
         Button(action: {
             self.userData.score = self.viewModel.score
+            self.viewModel.date = Date()
             self.wasPushed = false}) {
         Text("Done")
         }

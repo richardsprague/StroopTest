@@ -15,11 +15,14 @@ struct STResultsView: View {
     @EnvironmentObject var userData: STData
     
     var body: some View {
+  
         VStack{
-            Text("This is the Results View")
+            Text("This is the Results View").font(.title)
 
         Text("Score:" + String(self.userData.score))
             .padding()
+
+            Text("Date:" + DateFormatter().string(from:self.userData.date))
     }
     }
 }
