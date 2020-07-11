@@ -20,16 +20,23 @@ struct STResultsView: View {
             Text("This is the Results View")
                 .font(.title)
             
-//            List(self.userData.results, id: \.self){result in Text(result.score)
-//            }
+            List(userData.results, id:\.date){result in
+                
+                HStack{
+                    Text("Score:" + String(result.score))
+                    .padding()
+                    Text(result.date.description)
+                }
+                
+            }
 
-            Text("Score:" + String(self.userData.latestResult().score))
-            .padding()
-
-            Text("Duration:" + self.userData.date.description)
-            .padding()
-            
-        Text("Duration:" + String(self.userData.duration))
+//            Text("Score:" + String(userData.latestResult().score))
+//            .padding()
+//
+//            Text("Duration:" + userData.date.description)
+//            .padding()
+//
+//        Text("Duration:" + String(userData.duration))
     }
     }
 }

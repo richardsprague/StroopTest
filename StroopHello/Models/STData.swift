@@ -9,10 +9,18 @@
 import SwiftUI
 import Combine
 
-struct sessionData {
+struct sessionData: Identifiable{
+    var id = UUID()
     var score: Int
     var date: Date
     var duration: Double
+    
+    init(score:Int, date:Date, duration:Double){
+        self.score = score
+        self.date = date
+        self.duration = duration
+        self.id = UUID()
+    }
 }
 
 final class STData: ObservableObject  {
