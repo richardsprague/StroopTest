@@ -14,9 +14,6 @@ struct STCardView: View {
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
  
-
-        @Environment(\.managedObjectContext) var managedObjectContext
-
     
     
     
@@ -51,7 +48,7 @@ struct STCardView: View {
 
         Button(action: {
             self.userData.score = self.viewModel.score
-            self.viewModel.date = Date()
+            self.userData.date = Date()
             self.wasPushed = false}) {
         Text("Done")
         }
