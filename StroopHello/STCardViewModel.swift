@@ -27,9 +27,9 @@ class STCardViewModel:  ObservableObject {
         self.message = self.card.message
         self.color = self.card.sColor
         self.colorName = self.card.color
-        self.date = Date()
+        self.date = self.card.startDate
         self.buttonsShuffled = self.card.buttonsShuffled
-        self.score = 0
+        self.score = self.card.score
     }
     
     func changeCardColor(){
@@ -42,6 +42,7 @@ class STCardViewModel:  ObservableObject {
         
         if self.colorName == colorString {
             self.score+=1
+            self.card.score = self.score
             return true
         }
         else {

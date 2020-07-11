@@ -9,9 +9,28 @@
 import SwiftUI
 import Combine
 
+struct sessionData {
+    var score: Int
+    var date: Date
+    var duration: Double
+}
+
 final class STData: ObservableObject  {
     @Published var score = 0
     @Published var date = Date()
     var duration: Double = 0.0
-
+    
+    var results: [sessionData] = []
+    
+    func addResult(result:sessionData){
+        results.append(result)
+    }
+    
+    func addResult(){
+        results.append(sessionData(score: self.score, date: self.date, duration: self.duration))
+    }
+    
+    func latestResult() -> sessionData {
+        return(self.results.last ?? sessionData(score: -1, date: Date(), duration: 0))
+    }
 }
