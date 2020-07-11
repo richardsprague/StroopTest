@@ -22,7 +22,10 @@ struct STResultsView: View {
         Text("Score:" + String(self.userData.score))
             .padding()
 
-            Text("Date:" + DateFormatter().string(from:self.userData.date))
+            Text("Duration:" + self.userData.date.description)
+            .padding()
+            
+        Text("Duration:" + String(self.userData.duration))
     }
     }
 }
