@@ -17,9 +17,13 @@ struct STResultsView: View {
     var body: some View {
   
         VStack{
-            Text("This is the Results View").font(.title)
+            Text("This is the Results View")
+                .font(.title)
+            
+//            List(self.userData.results, id: \.self){result in Text(result.score)
+//            }
 
-        Text("Score:" + String(self.userData.score))
+            Text("Score:" + String(self.userData.latestResult().score))
             .padding()
 
             Text("Duration:" + self.userData.date.description)

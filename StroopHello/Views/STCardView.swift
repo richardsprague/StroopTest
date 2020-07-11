@@ -49,6 +49,7 @@ struct STCardView: View {
         Button(action: {
             self.userData.score = self.viewModel.score
             self.userData.date = Date()
+            self.userData.addResult()
             self.wasPushed = false}) {
         Text("Done")
         }
