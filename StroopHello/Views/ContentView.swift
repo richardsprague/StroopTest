@@ -64,7 +64,7 @@ struct ContentView_Previews: PreviewProvider {
         
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
-        return ContentView(pressed: "something").environment(\.managedObjectContext, context)
+        return ContentView(pressed: "something").environment(\.managedObjectContext, context).environmentObject(STData())
     }
 }
 

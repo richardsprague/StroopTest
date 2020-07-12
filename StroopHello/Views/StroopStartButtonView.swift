@@ -34,7 +34,7 @@ struct StroopStartButtonView_Previews: PreviewProvider {
     static var previews: some View {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
-        return StroopStartButtonView(direction: "Left").environment(\.managedObjectContext, context)
+        return StroopStartButtonView(direction: "Left").environment(\.managedObjectContext, context).environmentObject(STData())
     }
 }
 
