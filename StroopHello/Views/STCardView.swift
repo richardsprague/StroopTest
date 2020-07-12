@@ -9,11 +9,12 @@
 import SwiftUI
 
 struct STCardView: View {
+
     @Binding var wasPushed: Bool
     @EnvironmentObject var userData: STData
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
- 
+
     
     
     
@@ -50,6 +51,7 @@ struct STCardView: View {
             self.userData.score = self.viewModel.score
             self.userData.date = Date()
             self.userData.addResult()
+            self.viewModel.addSession(score: self.userData.score, date: self.userData.date, duration: self.userData.duration)
             self.wasPushed = false}) {
         Text("Done")
         }
@@ -60,7 +62,11 @@ struct STCardView: View {
                 .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
             
         }
-}}}
+}}
+}
+
+
+
 
 
 struct STCardView_Previews: PreviewProvider {
