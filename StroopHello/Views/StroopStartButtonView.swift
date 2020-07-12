@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct StroopStartButtonView: View {
-      @EnvironmentObject var userData: STData
+    @EnvironmentObject var userData: STData
     var direction: String
 
     
@@ -22,7 +22,7 @@ struct StroopStartButtonView: View {
                 .padding()
 
             FancyButtonView(direction: direction).environmentObject(self.userData)
-            
+//
             
         }
 
@@ -32,7 +32,9 @@ struct StroopStartButtonView: View {
 
 struct StroopStartButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        StroopStartButtonView(direction: "Left")
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        return StroopStartButtonView(direction: "Left").environment(\.managedObjectContext, context)
     }
 }
 

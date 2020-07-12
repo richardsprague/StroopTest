@@ -37,8 +37,6 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         get {cardData.duration}
         set {cardData.duration = Date().timeIntervalSince(cardData.date)}
     }
-    var cardInfo: StroopData
-
 
     
     init(message:String){
@@ -52,7 +50,7 @@ class STCard: Identifiable {  // Identifiable protocol makes it easier to loop i
         self.cardData.date = Date()
         self.cardData.duration = Date().timeIntervalSince(self.cardData.date)
         
-        self.cardInfo = StroopData()
+        
     }
     
     func randomize(){
