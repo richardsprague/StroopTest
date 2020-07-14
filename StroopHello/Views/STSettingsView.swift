@@ -9,8 +9,28 @@
 import SwiftUI
 
 struct STSettingsView: View {
+    
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     var body: some View {
-        Text("This is the settings view").font(.title)
+        VStack {
+            Text("This is the settings view").font(.title).padding()
+            Button("Add") {
+                let newSession = StroopData(context: self.managedObjectContext)
+                
+                // 2
+                newSession.score = Int32(17)
+                newSession.date = Date()
+                newSession.duration = 3.14
+                
+                do {
+                    try self.managedObjectContext.save()
+                } catch {
+                    print("Error saving managed object context: \(error)")
+                }
+                
+            }
+        }
     }
 }
 

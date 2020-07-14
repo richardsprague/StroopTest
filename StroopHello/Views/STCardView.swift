@@ -11,12 +11,10 @@ import SwiftUI
 struct STCardView: View {
 
     @Binding var wasPushed: Bool
+    @Environment(\.managedObjectContext) var managedObjectContext
     @EnvironmentObject var userData: STData
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
-
-    
-    
     
   var body: some View {
     VStack {
@@ -46,15 +44,35 @@ struct STCardView: View {
         }
         
         
-
-        Button(action: {
+        
+        Button("Done") {
             self.userData.score = self.viewModel.score
             self.userData.date = Date()
             self.userData.addResult()
-            self.viewModel.addSession(score: self.userData.score, date: self.userData.date, duration: self.userData.duration)
-            self.wasPushed = false}) {
-        Text("Done")
+            //   self.viewModel.addSession(score: self.userData.score, date: self.userData.date, duration: self.userData.duration)
+            
+            print("userData.score=",self.userData.score)
+            let newSession = StroopData(context: self.managedObjectContext)
+            
+            // 2
+            newSession.score = Int32(17)
+            newSession.date = Date()
+            newSession.duration = 3.14
+            print("newSession.score=",newSession.score)
+            
+            do {
+                try self.managedObjectContext.save()
+            } catch {
+                print("Error saving managed object context: \(error)")
+            }
+            
+            
+            
+            
+            self.wasPushed = false
         }
+        
+        
         Text("Score: " + String(self.viewModel.score))
         Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
             Image(systemName: "backward.fill")

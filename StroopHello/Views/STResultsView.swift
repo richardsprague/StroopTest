@@ -19,7 +19,7 @@ struct STResultsView: View {
        entity: StroopData.entity(),
        // 3.
        sortDescriptors: [
-        NSSortDescriptor(keyPath: \StroopData.score, ascending: true)
+        NSSortDescriptor(keyPath: \StroopData.date, ascending: true)
        ]
        //,predicate: NSPredicate(format: "genre contains 'Action'")
        // 4.
@@ -28,7 +28,7 @@ struct STResultsView: View {
 
     
     var body: some View {
-  
+        
         VStack{
             Text("This is the Results View")
                 .font(.title)
@@ -39,11 +39,13 @@ struct STResultsView: View {
                 HStack{
                     Text("Score:" + String(result.score))
                     .padding()
+                   
                     //Text(result.date.description)
                     Text(String(result.date?.description ?? "no value" ))
                 }
                 
             }
+            Text("end results view")
 
 //            Text("Score:" + String(userData.latestResult().score))
 //            .padding()

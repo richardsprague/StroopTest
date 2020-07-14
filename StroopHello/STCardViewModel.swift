@@ -70,12 +70,12 @@ class STCardViewModel:  ObservableObject {
     
     func addSession(score: Int, date: Date, duration: Double) {
       // 1
-      let newSession = StroopData(context: managedObjectContext)
+        let newSession = StroopData(context: self.managedObjectContext)
 
       // 2
-        newSession.score = Int32(score)
-      newSession.date = date
-      newSession.duration = duration
+        newSession.score = Int32(63)
+      newSession.date = Date()
+        newSession.duration = 4.75
 
       // 3
       saveContext()
