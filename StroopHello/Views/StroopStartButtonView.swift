@@ -12,6 +12,8 @@ struct StroopStartButtonView: View {
     @EnvironmentObject var userData: STData
     var direction: String
 
+
+
     
     var body: some View {
 
@@ -42,6 +44,7 @@ struct FancyButtonView: View {
     var direction: String
       @EnvironmentObject var userData: STData
     @State var wasPushedx = false
+        @Environment(\.managedObjectContext) var managedObjectContext
      
     var body: some View {
         NavigationView {
@@ -56,7 +59,9 @@ struct FancyButtonView: View {
             }
         }.sheet(isPresented: $wasPushedx,
                 onDismiss: { self.wasPushedx = false }) {
-                    STCardView(wasPushed:self.$wasPushedx).environmentObject(self.userData)
+                    STCardView(wasPushed:self.$wasPushedx)
+                        .environmentObject(self.userData)
+                        .environment(\.managedObjectContext, self.managedObjectContext)
         }
         
         //        .alert(isPresented: $wasPushed) {

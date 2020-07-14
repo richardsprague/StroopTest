@@ -35,7 +35,7 @@ struct STCardView: View {
             }.padding()
             ForEach(self.viewModel.buttonsShuffled, id: \.self){ color in
                 Button(action: {
-                    self.wasPushed =                 self.viewModel.matchesCardColor(colorString: color)
+                    self.wasPushed = self.viewModel.matchesCardColor(colorString: color)
                 }){
                     Text(color)
                 }.padding()
@@ -55,9 +55,9 @@ struct STCardView: View {
             let newSession = StroopData(context: self.managedObjectContext)
             
             // 2
-            newSession.score = Int32(17)
-            newSession.date = Date()
-            newSession.duration = 3.14
+            newSession.score = Int32(self.viewModel.score)
+            newSession.date = self.viewModel.date
+            newSession.duration = Date().timeIntervalSince(self.userData.date)
             print("newSession.score=",newSession.score)
             
             do {
