@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE216D5A24BD1C5500151B52 /* STTempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE216D5924BD1C5400151B52 /* STTempView.swift */; };
 		FE32500324B3A4260099735B /* STCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE32500224B3A4260099735B /* STCardView.swift */; };
 		FE509E3524ABE5A80028DC12 /* STData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3424ABE5A80028DC12 /* STData.swift */; };
 		FE509E3824ABFFCB0028DC12 /* STCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3724ABFFCB0028DC12 /* STCard.swift */; };
@@ -49,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FE216D5924BD1C5400151B52 /* STTempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTempView.swift; sourceTree = "<group>"; };
 		FE32500224B3A4260099735B /* STCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardView.swift; sourceTree = "<group>"; };
 		FE509E3424ABE5A80028DC12 /* STData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STData.swift; sourceTree = "<group>"; };
 		FE509E3724ABFFCB0028DC12 /* STCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCard.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				FEFFA6DA24A3CB6C002AF671 /* ContentView.swift */,
-				FE216D5924BD1C5400151B52 /* STTempView.swift */,
 				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
 				FE32500224B3A4260099735B /* STCardView.swift */,
 				FEAB734624B7C0C80033C702 /* STResultsView.swift */,
@@ -332,7 +329,6 @@
 				FE9F0C1D24A7FF8E00EDB445 /* STSceneVC.swift in Sources */,
 				FE509E3C24ACC7560028DC12 /* ColorManager.swift in Sources */,
 				FEFFA6D924A3CB6C002AF671 /* StroopHello.xcdatamodeld in Sources */,
-				FE216D5A24BD1C5500151B52 /* STTempView.swift in Sources */,
 				FEFFA6D424A3CB6C002AF671 /* AppDelegate.swift in Sources */,
 				FEFFA6DB24A3CB6C002AF671 /* ContentView.swift in Sources */,
 				FED79AC424A56DE8003E08DD /* StroopStartButtonView.swift in Sources */,

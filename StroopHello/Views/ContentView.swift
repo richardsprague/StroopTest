@@ -35,11 +35,6 @@ struct ContentView: View {
                         .tag(0)
                     .environmentObject(self.userData)
                     
-                    STTempView(wasPushed:  .constant(false))
-                        .tabItem{
-                            Text("temp")
-                    }.tag(3).environmentObject(self.userData)
-                    
                    STResultsView()
                         .tabItem {
                             VStack {
