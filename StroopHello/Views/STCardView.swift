@@ -11,8 +11,8 @@ import SwiftUI
 struct STCardView: View {
 
     @Binding var wasPushed: Bool
+    var userData = STData()
     @Environment(\.managedObjectContext) var managedObjectContext
-    @EnvironmentObject var userData: STData
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
 
     
@@ -46,19 +46,18 @@ struct STCardView: View {
         
         
         Button("Done") {
+            
             self.userData.score = self.viewModel.score
             self.userData.date = Date()
             self.userData.addResult()
-            //   self.viewModel.addSession(score: self.userData.score, date: self.userData.date, duration: self.userData.duration)
-            
-            print("userData.score=",self.userData.score)
+
+// This code does not belong in a View, but I'm unable to get it to work otherwise.
             let newSession = StroopData(context: self.managedObjectContext)
-            
-            // 2
+
             newSession.score = Int32(self.viewModel.score)
             newSession.date = self.viewModel.date
             newSession.duration = Date().timeIntervalSince(self.userData.date)
-            print("newSession.score=",newSession.score)
+
             
             do {
                 try self.managedObjectContext.save()
@@ -67,7 +66,7 @@ struct STCardView: View {
             }
             
             
-            
+
             
             self.wasPushed = false
         }

@@ -12,7 +12,7 @@ import SwiftUI
 
 
 struct STResultsView: View {
-    @EnvironmentObject var userData: STData
+   // @EnvironmentObject var userData: STData
     
     @FetchRequest(
        // 2.
@@ -30,8 +30,13 @@ struct STResultsView: View {
     var body: some View {
         
         VStack{
-            Text("This is the Results View")
+            Text("Results")
                 .font(.title)
+            HStack{
+                Text("Score").padding()
+                Text("Date").padding()
+                Text("Duration").padding()
+            }
             
             // List(userData.results, id:\.date){result in
             List(allData, id:\.date){result in

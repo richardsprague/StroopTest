@@ -10,8 +10,6 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selection = 0
-    @EnvironmentObject var userData: STData
-
     
     var pressed : String
     
@@ -33,7 +31,6 @@ struct ContentView: View {
                             }
                         }
                         .tag(0)
-                    .environmentObject(self.userData)
                     
                    STResultsView()
                         .tabItem {
@@ -43,7 +40,6 @@ struct ContentView: View {
                             }
                         }
                         .tag(1)
-                   .environmentObject(self.userData)
                     STSettingsView()
                         .tabItem {
                             VStack {
@@ -52,7 +48,6 @@ struct ContentView: View {
                             }
                         }
                         .tag(2)
-                    .environmentObject(self.userData)
                 }
             }
         }

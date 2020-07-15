@@ -23,18 +23,6 @@ class STCardViewModel:  ObservableObject {
     var buttonsShuffled = [String]()
     var message: String
     
-    @FetchRequest(
-      // 2.
-      entity: StroopData.entity(),
-      // 3.
-      sortDescriptors: [
-       NSSortDescriptor(keyPath: \StroopData.score, ascending: true)
-      ]
-      //,predicate: NSPredicate(format: "genre contains 'Action'")
-      // 4.
-    ) var allData: FetchedResults<StroopData>
-
-   
     
     init(message:String){
         self.card = .init(message: message)
@@ -73,19 +61,18 @@ class STCardViewModel:  ObservableObject {
         let newSession = StroopData(context: self.managedObjectContext)
 
       // 2
-        newSession.score = Int32(63)
+        newSession.score = Int32(score)
       newSession.date = Date()
-        newSession.duration = 4.75
-
-      // 3
-      saveContext()
+        newSession.duration = duration
+        
+        saveContext()
     }
 
     func saveContext() {
       do {
         try managedObjectContext.save()
       } catch {
-        print("Error saving managed object context: \(error)")
+        print("viewmodel: Error saving managed object context: \(error)")
       }
     }
 }

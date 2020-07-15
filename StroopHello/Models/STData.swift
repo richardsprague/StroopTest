@@ -26,6 +26,8 @@ struct sessionData: Identifiable{
 final class STData: ObservableObject  {
     @Published var score = 0
     @Published var date = Date()
+    @Environment(\.managedObjectContext) var managedObjectContext
+    
     var duration: Double = 0.0
     
     var results: [sessionData] = []
@@ -40,5 +42,20 @@ final class STData: ObservableObject  {
     
     func latestResult() -> sessionData {
         return(self.results.last ?? sessionData(score: -1, date: Date(), duration: 0))
+    }
+    
+    func saveContext(result:sessionData){
+        let newSession = StroopData(context: self.managedObjectContext)
+
+        newSession.score = Int32(result.score)
+        newSession.date = result.date
+        newSession.duration = result.duration
+
+        
+        do {
+            try self.managedObjectContext.save()
+        } catch {
+            print("Error saving managed object context: \(error)")
+        }
     }
 }
