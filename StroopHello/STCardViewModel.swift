@@ -70,30 +70,7 @@ class STCardViewModel:  ObservableObject {
         
     }
     
-    func addSession(score: Int, date: Date, duration: Double) {
-      // 1
-        let newSession = StroopData(context: self.managedObjectContext)
-
-      // 2
-        newSession.score = Int32(score)
-      newSession.date = Date()
-        newSession.duration = duration
-        
-        saveContext()
-    }
-
-    func saveContext() {
-      do {
-        try managedObjectContext.save()
-      } catch {
-        print("viewmodel: Error saving managed object context: \(error)")
-      }
-    }
+   
 }
 
 
-struct STCardViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
-}

@@ -15,7 +15,15 @@ struct STSettingsView: View {
     var body: some View {
         VStack {
             Text("This is the settings view").font(.title).padding()
-                
+                NavigationView {
+                    VStack{
+                    NavigationLink(destination: Text("Second View")) {
+                        Text("Click Here")
+                    FancyButtonView(direction: "left")
+                    }
+                    }
+                    .navigationBarTitle("Settings Details")
+                }
             
         }
     }
