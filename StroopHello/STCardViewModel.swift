@@ -14,7 +14,7 @@ class STCardViewModel:  ObservableObject {
     
      var card: STCard
     
-        @Environment(\.managedObjectContext) var managedObjectContext
+    @Environment(\.managedObjectContext) var managedObjectContext
     
     @Published private(set) var color: Color
     @Published var score: Int
@@ -54,7 +54,21 @@ class STCardViewModel:  ObservableObject {
         
     }
     
-    
+    // for some reason this won't save.
+    func finish(){
+        let newSession = StroopData(context: self.managedObjectContext)
+        newSession.score = Int32(self.card.score)
+        newSession.date = self.card.startDate
+        newSession.duration = self.card.duration
+        do {
+            try self.managedObjectContext.save()
+         } catch {
+           print("viewmodel: Error saving managed object context: \(error)")
+            print("score= ",newSession.score)
+         }
+
+        
+    }
     
     func addSession(score: Int, date: Date, duration: Double) {
       // 1
@@ -77,3 +91,9 @@ class STCardViewModel:  ObservableObject {
     }
 }
 
+
+struct STCardViewModel_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}

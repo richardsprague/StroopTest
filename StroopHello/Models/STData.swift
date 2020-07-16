@@ -55,7 +55,7 @@ final class STData: ObservableObject  {
         do {
             try self.managedObjectContext.save()
         } catch {
-            print("Error saving managed object context: \(error)")
+            print("STData: Error saving managed object context: \(error)")
         }
     }
 }

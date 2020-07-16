@@ -12,7 +12,7 @@ import SwiftUI
 
 
 struct STResultsView: View {
-   // @EnvironmentObject var userData: STData
+
     
     @FetchRequest(
        // 2.

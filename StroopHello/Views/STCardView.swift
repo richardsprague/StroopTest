@@ -50,6 +50,8 @@ struct STCardView: View {
             self.userData.score = self.viewModel.score
             self.userData.date = Date()
             self.userData.addResult()
+            
+            self.viewModel.finish()
 
 // This code does not belong in a View, but I'm unable to get it to work otherwise.
             let newSession = StroopData(context: self.managedObjectContext)
