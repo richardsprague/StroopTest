@@ -18,6 +18,7 @@ struct STCardView: View {
     
   var body: some View {
     VStack {
+        ZStack{
         Rectangle()
             .fill(viewModel.color)
             .frame(width:300, height:400)
@@ -25,6 +26,7 @@ struct STCardView: View {
             .border(self.viewModel.color, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
         
         Text(viewModel.colorName)
+        }
         HStack {
             Button(action: {
                 
@@ -75,12 +77,12 @@ struct STCardView: View {
         
         
         Text("Score: " + String(self.viewModel.score))
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-            Image(systemName: "backward.fill")
-                .resizable()
-                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
-            
-        }
+//        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+//            Image(systemName: "backward.fill")
+//                .resizable()
+//                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
+//            
+//        }
 }}
 }
 
