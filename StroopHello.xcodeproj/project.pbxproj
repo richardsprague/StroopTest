@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE32500324B3A4260099735B /* STCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE32500224B3A4260099735B /* STCardView.swift */; };
+		FE47877324C7A9D4000EAC41 /* STSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE47877224C7A9D4000EAC41 /* STSceneView.swift */; };
 		FE509E3524ABE5A80028DC12 /* STData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3424ABE5A80028DC12 /* STData.swift */; };
 		FE509E3824ABFFCB0028DC12 /* STCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3724ABFFCB0028DC12 /* STCard.swift */; };
 		FE509E3A24ACC6000028DC12 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE509E3924ACC6000028DC12 /* Colors.xcassets */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		FE32500224B3A4260099735B /* STCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCardView.swift; sourceTree = "<group>"; };
+		FE47877224C7A9D4000EAC41 /* STSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSceneView.swift; sourceTree = "<group>"; };
 		FE509E3424ABE5A80028DC12 /* STData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STData.swift; sourceTree = "<group>"; };
 		FE509E3724ABFFCB0028DC12 /* STCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STCard.swift; sourceTree = "<group>"; };
 		FE509E3924ACC6000028DC12 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				FEFFA6D524A3CB6C002AF671 /* SceneDelegate.swift */,
 				FEAB734824B7C0E00033C702 /* Views */,
 				FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */,
+				FE47877224C7A9D4000EAC41 /* STSceneView.swift */,
 				FED79AC524A638E0003E08DD /* STCardViewModel.swift */,
 				FE509E3924ACC6000028DC12 /* Colors.xcassets */,
 				FEFFA6DC24A3CB82002AF671 /* assets.xcassets */,
@@ -345,6 +348,7 @@
 				FE6B6BFB24C10CC1000087F2 /* STHelpScreen.swift in Sources */,
 				FEAB734524B7C0A50033C702 /* STSettingsView.swift in Sources */,
 				FE32500324B3A4260099735B /* STCardView.swift in Sources */,
+				FE47877324C7A9D4000EAC41 /* STSceneView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

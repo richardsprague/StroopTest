@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+
 struct STSettingsView: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext
@@ -17,10 +18,11 @@ struct STSettingsView: View {
             Text("This is the settings view").font(.title).padding()
                 NavigationView {
                     VStack{
-                    NavigationLink(destination: Text("Second View")) {
-                        Text("Click Here")
-                    FancyButtonView(direction: "left")
+                    NavigationLink(destination: STSceneView()) {
+                        Text("Start")
+                    
                     }
+                        
                     }
                     .navigationBarTitle("Settings Details")
                 }
@@ -28,6 +30,9 @@ struct STSettingsView: View {
         }
     }
 }
+
+
+
 
 struct STSettingsView_Previews: PreviewProvider {
     static var previews: some View {
