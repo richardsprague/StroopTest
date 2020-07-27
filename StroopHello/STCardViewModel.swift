@@ -15,6 +15,7 @@ class STCardViewModel:  ObservableObject {
      var card: STCard
     
     @Environment(\.managedObjectContext) var managedObjectContext
+
     
     @Published private(set) var color: Color
     @Published var score: Int

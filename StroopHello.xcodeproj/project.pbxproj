@@ -14,6 +14,7 @@
 		FE509E3A24ACC6000028DC12 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE509E3924ACC6000028DC12 /* Colors.xcassets */; };
 		FE509E3C24ACC7560028DC12 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE509E3B24ACC7560028DC12 /* ColorManager.swift */; };
 		FE6B6BFB24C10CC1000087F2 /* STHelpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6B6BFA24C10CC1000087F2 /* STHelpScreen.swift */; };
+		FE7379A224CE5D0B00B0F8BB /* STTimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7379A124CE5D0B00B0F8BB /* STTimeCounter.swift */; };
 		FE9F0C1D24A7FF8E00EDB445 /* STSceneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */; };
 		FEAB734524B7C0A50033C702 /* STSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734424B7C0A50033C702 /* STSettingsView.swift */; };
 		FEAB734724B7C0C80033C702 /* STResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB734624B7C0C80033C702 /* STResultsView.swift */; };
@@ -57,6 +58,7 @@
 		FE509E3924ACC6000028DC12 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FE509E3B24ACC7560028DC12 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorManager.swift; path = Models/ColorManager.swift; sourceTree = "<group>"; };
 		FE6B6BFA24C10CC1000087F2 /* STHelpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STHelpScreen.swift; sourceTree = "<group>"; };
+		FE7379A124CE5D0B00B0F8BB /* STTimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = STTimeCounter.swift; path = StroopHello/Models/STTimeCounter.swift; sourceTree = SOURCE_ROOT; };
 		FE9F0C1924A7F4D600EDB445 /* StroopPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = StroopPlayground.playground; path = ../../StroopPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		FE9F0C1C24A7FF8E00EDB445 /* STSceneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSceneVC.swift; sourceTree = "<group>"; };
 		FEAB734424B7C0A50033C702 /* STSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSettingsView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				FED79AC324A56DE7003E08DD /* StroopStartButtonView.swift */,
 				FE6B6BFA24C10CC1000087F2 /* STHelpScreen.swift */,
 				FE32500224B3A4260099735B /* STCardView.swift */,
+				FE7379A124CE5D0B00B0F8BB /* STTimeCounter.swift */,
 				FEAB734624B7C0C80033C702 /* STResultsView.swift */,
 				FEAB734424B7C0A50033C702 /* STSettingsView.swift */,
 			);
@@ -342,6 +345,7 @@
 				FEAB734724B7C0C80033C702 /* STResultsView.swift in Sources */,
 				FEAB734F24B814150033C702 /* StroopData+CoreDataProperties.swift in Sources */,
 				FEAB734E24B814150033C702 /* StroopData+CoreDataClass.swift in Sources */,
+				FE7379A224CE5D0B00B0F8BB /* STTimeCounter.swift in Sources */,
 				FEFFA6D624A3CB6C002AF671 /* SceneDelegate.swift in Sources */,
 				FED79AC624A638E0003E08DD /* STCardViewModel.swift in Sources */,
 				FE509E3824ABFFCB0028DC12 /* STCard.swift in Sources */,

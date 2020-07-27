@@ -14,7 +14,7 @@ struct STCardView: View {
     var userData = STData()
     @Environment(\.managedObjectContext) var managedObjectContext
     @ObservedObject var viewModel = STCardViewModel(message: "Shuffle")
-
+    @ObservedObject var timer = TimeCounter()
     
   var body: some View {
     VStack {
@@ -24,8 +24,10 @@ struct STCardView: View {
             .frame(width:300, height:400)
             .padding()
             .border(self.viewModel.color, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
-        
-        Text(viewModel.colorName)
+            VStack{
+                Text(viewModel.colorName).foregroundColor(.white).padding()
+                Text(String(timer.counter)).foregroundColor(.white)
+            }
         }
         HStack {
             Button(action: {
@@ -52,6 +54,7 @@ struct STCardView: View {
             self.userData.score = self.viewModel.score
             self.userData.date = Date()
             self.userData.addResult()
+            self.timer.killTimer()
             
             self.viewModel.finish()
 
@@ -69,9 +72,6 @@ struct STCardView: View {
                 print("Error saving managed object context: \(error)")
             }
             
-            
-
-            
             self.wasPushed = false
         }
         
@@ -83,7 +83,9 @@ struct STCardView: View {
 //                .frame(width: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100.0/*@END_MENU_TOKEN@*/)
 //            
 //        }
-}}
+}
+    
+    }
 }
 
 
